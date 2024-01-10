@@ -16,7 +16,7 @@ public class App {
             Connection connection = DriverManager.getConnection(url, "root", "yourPassword");
             // Create a statement object to execute the SQL statement.
             Statement statement = connection.createStatement();
-            Execute the SQL statement to send to the server.
+            // Execute the SQL statement to send to the server.
             sqlResult = statement.executeUpdate("insert into employees_tbl (id, name, dept, salary) values(1000, \"Forrest\", \"Technology\", 6500);");
             sqlDelete = statement.executeUpdate("delete from employees_tbl where id = 100;");
             sqlUpdate = statement.executeUpdate("UPDATE employees_tbl SET salary=8000 where id = 800;");
